@@ -30,14 +30,18 @@
 .hero-number {
   position: absolute;
   font-family: var(--font-display);
-  font-size: clamp(200px, 35vw, 460px);
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(123,31,162,0.16);
+  font-size: clamp(220px, 35vw, 520px);
+  color: rgba(123,31,162,0.04);
+  -webkit-text-stroke: 1.6px rgba(123,31,162,0.55);
   letter-spacing: -0.02em; line-height: 1;
   user-select: none; pointer-events: none;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
+  text-shadow:
+    0 0 18px rgba(123,31,162,0.14),
+    0 0 38px rgba(123,31,162,0.10);
+  opacity: 0.88;
   animation: strokeBreath 5s ease-in-out infinite alternate;
 }
 @keyframes strokeBreath {

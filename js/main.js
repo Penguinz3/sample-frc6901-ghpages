@@ -23,8 +23,8 @@
   });
 
   function animRing() {
-    rx += (mx - rx) * 0.12;
-    ry += (my - ry) * 0.12;
+    rx += (mx - rx) * 0.22;
+    ry += (my - ry) * 0.22;
     ring.style.left = rx + 'px';
     ring.style.top  = ry + 'px';
     raf = requestAnimationFrame(animRing);
